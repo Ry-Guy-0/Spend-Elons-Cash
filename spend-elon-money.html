@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spend Elon Musk's Money</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="spend-elon-money.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <h1>💰 Spend Elon Musk's Money</h1>
+                <p>Current net worth: <strong>$412.1 Billion</strong></p>
+                <div class="money-counter">
+                    <span class="money-label">Money Left:</span>
+                    <span class="money-amount" id="money-left">$412,100,000,000</span>
+                </div>
+                <div class="percentage-spent">
+                    <span class="percentage-label">Percentage Spent:</span>
+                    <span class="percentage-amount" id="percent-spent">0.00%</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- Categories Filter -->
+        <div class="categories-container">
+            <div class="categories">
+                <button class="category-btn active" data-category="all">All Items</button>
+                <button class="category-btn" data-category="tech">🔌 Tech</button>
+                <button class="category-btn" data-category="vehicles">🚗 Vehicles</button>
+                <button class="category-btn" data-category="real-estate">🏠 Real Estate</button>
+                <button class="category-btn" data-category="luxury">💎 Luxury</button>
+                <button class="category-btn" data-category="experiences">🎯 Experiences</button>
+                <button class="category-btn" data-category="companies">🏢 Companies</button>
+            </div>
+        </div>
+
+        <!-- Items Grid -->
+        <main class="items-container">
+            <div class="items-grid" id="items-grid">
+                <!-- Items will be dynamically generated here -->
+            </div>
+        </main>
+
+        <!-- Receipt Sidebar -->
+        <div class="receipt-sidebar" id="receipt-sidebar">
+            <div class="receipt-header">
+                <div class="store-header">
+                    <h2>ELON'S LUXURY MART</h2>
+                    <p>123 BILLIONAIRE BLVD</p>
+                    <p>SILICON VALLEY, CA 94000</p>
+                    <p>TEL: (555) RICH-BOY</p>
+                    <div class="receipt-divider">================================</div>
+                </div>
+                <button class="close-receipt" id="close-receipt">×</button>
+            </div>
+            <div class="receipt-content" id="receipt-content">
+                <div class="receipt-date" id="receipt-date"></div>
+                <div class="cashier-info">CASHIER: ELON M. | REG: 001</div>
+                <div class="receipt-divider">================================</div>
+                <p class="no-purchases">No purchases yet. Start spending!</p>
+            </div>
+            <div class="receipt-footer">
+                <div class="receipt-divider">================================</div>
+                <div class="receipt-summary">
+                    <div class="summary-line">
+                        <span>SUBTOTAL:</span>
+                        <span id="subtotal-amount">$0.00</span>
+                    </div>
+                    <div class="summary-line">
+                        <span>TAX (LUXURY 8.5%):</span>
+                        <span id="tax-amount">$0.00</span>
+                    </div>
+                    <div class="summary-line total-line">
+                        <span>TOTAL:</span>
+                        <span id="total-spent">$0.00</span>
+                    </div>
+                </div>
+                <div class="receipt-divider">================================</div>
+                <div class="payment-method">PAYMENT: ELON'S BILLIONS</div>
+                <div class="receipt-divider">================================</div>
+                <div class="receipt-footer-text">
+                    <p>THANK YOU FOR SHOPPING!</p>
+                    <p>COME BACK WHEN YOU MAKE MORE BILLIONS</p>
+                </div>
+                <button class="clear-all-btn" id="clear-all">Start New Receipt</button>
+            </div>
+        </div>
+
+        <!-- Receipt Toggle Button -->
+        <button class="receipt-toggle" id="receipt-toggle">
+            🧾 Receipt (<span id="items-count">0</span>)
+        </button>
+
+        <!-- Fun Facts -->
+        <div class="fun-facts" id="fun-facts">
+            <div class="fact-content">
+                <span id="current-fact">You could buy 2,400 Lamborghinis with Elon's money!</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="spend-elon-money.js"></script>
+</body>
+</html> 
